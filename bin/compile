@@ -79,7 +79,7 @@ export LD_LIBRARY_PATH="\$HOME/.heroku/vendor/lib:\$LD_LIBRARY_PATH"
 export PATH="\$HOME/.heroku/vendor/bin:\$PATH"
 export PYTHONPATH="\$HOME/.heroku/vendor/lib/python2.7"
 EOF
-echo $LD_LIBRARY_PATH
+title $LD_LIBRARY_PATH
 
 # deep-mv $BUILD_DIR/.heroku $ORIG_BUILD_DIR/.heroku
 # deep-mv $BUILD_DIR/.profile.d $ORIG_BUILD_DIR/.profile.d
