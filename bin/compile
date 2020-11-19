@@ -75,8 +75,8 @@ rm -rf $CACHE_DIR/vendor.tar.xz
 title "Creating environment variables."
 mkdir -p $BUILD_DIR/.profile.d
 cat <<EOF >$BUILD_DIR/.profile.d/opencv.sh
-export LD_LIBRARY_PATH="\$HOME/.heroku/vendor/lib:\$LD_LIBRARY_PATH"
-export PATH="\$HOME/.heroku/vendor/bin:\$PATH"
+export LD_LIBRARY_PATH="\$HOME/.heroku/vendor:\$LD_LIBRARY_PATH"
+export PATH="\$HOME/.heroku/vendor:\$PATH"
 export PYTHONPATH="\$HOME/.heroku/vendor/lib/python2.7"
 EOF
 title $LD_LIBRARY_PATH
